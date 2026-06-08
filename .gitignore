@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+**/dist/
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Drizzle migrations (optional)
+drizzle/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Wrangler
+.wrangler/

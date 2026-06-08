@@ -1,0 +1,27 @@
+# ─── Cloudflare Workers Configuration ────────────────────────────────────────
+name = "nexora-api"
+main = "backend/dist/index.js"
+compatibility_date = "2024-07-15"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+
+# ─── D1 Database (SQLite on Cloudflare) ────────────────────────────────────
+[[d1_databases]]
+binding = "DB"
+database_name = "nexora-db"
+database_id = "your-d1-database-id-here"
+
+# ─── KV Namespace (for caching) ─────────────────────────────────────────────
+[[kv_namespaces]]
+binding = "CACHE"
+id = "your-kv-namespace-id-here"
+
+# ─── Routes ─────────────────────────────────────────────────────────────────
+[[routes]]
+pattern = "api.nexora.dev/*"
+zone_name = "nexora.dev"
+
+# ─── Pages (for Angular Frontend) ───────────────────────────────────────────
+# Deploy frontend via: npx wrangler pages deploy frontend/dist/nexora --project-name nexora-web
