@@ -33,7 +33,7 @@ const CLIENTS = ['Allianz', 'Bosch', 'Deutsche Bank', 'Lufthansa', 'SAP', 'Sieme
                                    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
                  background-size: 60px 60px;"></div>
         <div class="absolute w-[600px] h-[600px] -top-48 -left-24 rounded-full opacity-10"
-          style="background: #f97316; filter: blur(120px);"></div>
+          style="background: #c8f55a; filter: blur(120px);"></div>
         <div class="absolute w-[400px] h-[400px] bottom-0 right-0 rounded-full opacity-10"
           style="background: #5c6fff; filter: blur(120px);"></div>
       </div>
@@ -48,7 +48,7 @@ const CLIENTS = ['Allianz', 'Bosch', 'Deutsche Bank', 'Lufthansa', 'SAP', 'Sieme
 
         <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 font-display">
           Software, die<br>
-          <em class="not-italic bg-gradient-to-br from-accent to-[#fb923c]
+          <em class="not-italic bg-gradient-to-br from-accent to-[#a8ff78]
                      bg-clip-text text-transparent">wirklich skaliert.</em>
         </h1>
 

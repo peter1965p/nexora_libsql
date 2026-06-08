@@ -40,7 +40,7 @@ app.onError((err, c) => {
 });
 
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
-const port = Number(process.env.PORT ?? 3000);
+const port = Number(process.env.PORT ?? 3002);
 
 initializeDatabase().then(() => {
   serve({ fetch: app.fetch, port }, (info) => {

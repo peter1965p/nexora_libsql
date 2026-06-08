@@ -1,0 +1,20 @@
+name = "nexora-api"
+main = "backend/src/index.ts"
+compatibility_date = "2024-07-15"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nexora-db"
+database_id = "your-d1-database-id-here"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "your-kv-namespace-id-here"
+
+[[routes]]
+pattern = "api.nexora.dev/*"
+zone_name = "nexora.dev"
