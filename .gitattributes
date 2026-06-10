@@ -1,0 +1,4 @@
+# Linguist overrides
+frontend/src/**/*.ts linguist-language=TypeScript
+frontend/src/**/*.html linguist-detectable=true
+*.component.ts linguist-language=Angular
